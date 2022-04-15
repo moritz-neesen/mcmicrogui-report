@@ -16,7 +16,7 @@ Since multiplexed imaging can yield up to 1 terabyte of data, accurate and repro
 In 2022, Schapiro et.al. presented MCMICRO (Multiple Choice MICROscopy) as a solution for these issues. The software is a modular image processing pipeline that allows for reproducible analysis of both Tissue Microarray (TMA) and whole slide images (WSI) with minimal manual preprocessing<sup>5</sup>.
 
 MCMICRO outputs the result of its analysis in the form of images and tabular data. Thus it complements existing software and gives the user flexibility in terms of further analysis and visualization<sup>5</sup>. This approach is very useful in the context of a bioinformatics laboratory where tools and know-how for these tasks are readily available.
- However, the insights that can be gained from processing data with MCMICRO would also be useful in a wet lab or clinical setting. Furthermore, being able to conduct quality assurance of an MCMICRO analysis without time consuming further analysis would also be highly desireable for bioinfomaticians.
+ However, the insights that can be gained from processing data with MCMICRO would also be useful in a wet lab or clinical setting. Furthermore, being able to conduct quality assurance of an MCMICRO analysis without time consuming further analysis would also be highly desirable for bioinfomaticians.
 
 In order to solve these issues and to expand the MCMICRO ecosystem, we set out to develop MCMICRO-GUI: a lightweight application capable of generating automatic, interactive and portable reports from data processed with MCMICRO.
 
@@ -77,7 +77,7 @@ _Fig. 1: UML flowchart of MCMICRO-GUI_
 
 When run, the application follows the steps outlined in Figure 1.
 
-In the first step, the output of an MCMICRO analysis is read from a path specified by the user. The program then automatically determines from the folder structure if the data it is processing is derived from a TMA.
+In the first step, the output of an MCMICRO analysis is read from a path specified by the user. If the data is valid, the program then automatically determines from the folder structure whether the data it is processing is derived from a TMA.
 
 If no TMA is present, MCMICRO-GUI then detects a high intensity spot on the image created by MCMICROs registration step. A 500x500 pixel region around this spot is then cropped from both the registration image and the cell segmentation mask provided by MCMICRO. Both outcrops are stored in memory and are used to visualize image and segmentation data later on.
 

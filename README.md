@@ -66,7 +66,7 @@ For visualization and GUI purposes we used native html and Javascript without an
 
 ## 3. Results
 
-We developed MCMICRO-GUI as a tool consisting of two components. The first component is an interactive repo using JavaScript and html to visualize important aspects of an MCMICRO analysis. This report is generated from data processed with MCMICRO by a command line application implemented in Python. 
+We developed MCMICRO-GUI as a tool consisting of two components. The first component is an interactive report using JavaScript and html to visualize important aspects of an MCMICRO analysis. This report is generated from data processed with MCMICRO by a command line application implemented in Python. 
 
 <br/><br/>
 ![alt text](https://github.com/moritz-neesen/mcmicrogui-report/blob/main/UML.png)

@@ -2,28 +2,25 @@
 
 ## Abstract:
 
-MCMICRO is a is a modular image processing pipeline for multiplexed tissue images that allows for reproducible analysis of both Tissue Microarray (TMA) and whole slide images (WSI) with minimal manual preprocessing<sup>5</sup>. However, MCMICRO provides no built in quality assurance and visualization package. Here, we present an early release of MCMICRO-GUI: a lightweight application capable of generating automatic, interactive and portable reports from data processed with MCMICRO.
+MCMICRO is a is a modular image processing pipeline for highly multiplexed images that allows for reproducible analysis of both Tissue Microarray (TMA) and whole slide images (WSI) with minimal manual preprocessing<sup>5</sup>. However, MCMICRO provides no easy to explore, built in quality assurance and visualization package. Here, we present an early release of MCMICRO-GUI: a lightweight application capable of generating automatic, interactive and portable reports from data processed with MCMICRO.
 
-The source code the application can be found on [https://github.com/SchapiroLabor/mcmicrogui](https://github.com/SchapiroLabor/mcmicrogui), alongside with instructions on how to run the software. A containerized version is also available under [https://github.com/SchapiroLabor/mcmicrogui/pkgs/container/mcmicrogui](https://github.com/SchapiroLabor/mcmicrogui/pkgs/container/mcmicrogui).
+The source code of the application can be found on [https://github.com/SchapiroLabor/mcmicrogui](https://github.com/SchapiroLabor/mcmicrogui), alongside  instructions on how to run the software. A containerized version is also available under [https://github.com/SchapiroLabor/mcmicrogui/pkgs/container/mcmicrogui](https://github.com/SchapiroLabor/mcmicrogui/pkgs/container/mcmicrogui).
 
 
 ## 1. Introduction: Multiplexed image analysis with MCMICRO
 
 Multiplexed tissue imaging allows for precise molecular analysis of individual cells in the spatial context of their tissue. It enables quantification of up to 100 different proteins at subcellular resolutions across large tissue specimens. Thus it can be used to reveal valuable new insights about disease pathogenesis, tissue architecture and cell-cell interactions. Furthermore it is a promising tool for augmenting both transcriptomics<sup>1–3</sup> as well as traditional histopathological methods of diagnosis<sup>2,4</sup>.
 
-Since multiplexed imaging can yield up to 1 terabyte of data, accurate and reproducible analysis of these large datasets poses a number of computational issues5. Image processing needs to be efficient in terms of memory and processing power yet precise enough to allow for the detection and segmentation of individual cells in a crowded environment<sup>5</sup>.
+Since multiplexed imaging can yield up to 1 terabyte of data, accurate and reproducible analysis of these large datasets poses a number of computational issues<sup>5</sup>. Image processing needs to be efficient in terms of memory and processing power yet precise enough to allow for the detection and segmentation of individual cells in a crowded environment<sup>5</sup>.
 
 In 2022, Schapiro et.al. presented MCMICRO (Multiple Choice MICROscopy) as a solution for these issues. The software is a modular image processing pipeline that allows for reproducible analysis of both Tissue Microarray (TMA) and whole slide images (WSI) with minimal manual preprocessing<sup>5</sup>.
 
-MCMICRO outputs the result of its analysis in the form of images and tabular data. Thus it complements existing software and gives the user flexibility in terms of further analysis and visualization<sup>5</sup>. This approach is very useful in the context of a bioinformatics laboratory where tools and know-how for these tasks are readily available.
- However, the insights that can be gained from processing data with MCMICRO would also be useful in a wet lab or clinical setting. Furthermore, being able to conduct quality assurance of an MCMICRO analysis without time consuming further analysis would also be highly desirable for bioinfomaticians.
+MCMICRO outputs the result of its analysis in the form of images and tabular data. Thus it complements existing software and gives the user flexibility in terms of further analysis and visualization<sup>5</sup>. This approach is very useful in the context of bioinformatic pipelines where tools and know-how for these tasks are readily available. However, the insights that can be gained from processing data with MCMICRO would also be useful in a wet lab or clinical setting. Furthermore, being able to conduct quality assurance of an MCMICRO analysis without time consuming further analysis would also be highly desirable for bioinfomaticians.
 
 In order to solve these issues and to expand the MCMICRO ecosystem, we set out to develop MCMICRO-GUI: a lightweight application capable of generating automatic, interactive and portable reports from data processed with MCMICRO.
 
 
 ## 2. Methods
-
-
 
 ### 2.1 Design Goals
 
